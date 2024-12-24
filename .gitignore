@@ -4,3 +4,6 @@ lib/
 *.cfg
 *.gitignore
 *.DS_Store
+dist/
+build/
+*.spec
