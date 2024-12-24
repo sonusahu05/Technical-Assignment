@@ -22,9 +22,7 @@ options = ChromeOptions()
 options.set_capability('sessionName', 'BStack Sample Test')
 driver = webdriver.Chrome(options=options)
 
-driver = webdriver.Remote(
-    command_executor='http://localhost:4444/wd/hub',
-    options=options)
+driver = webdriver.Chrome(options=options)
 
 # driver = webdriver.Chrome()
 
@@ -38,7 +36,8 @@ try:
             element = wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
             element.click()
         except Exception as e:
-            print(f"Error clicking element {xpath}: {e}")
+            # print(f"Error clicking element {xpath}: {e}")
+            pass
 
     def get_element_text_by_xpath(xpath):
         try:
@@ -46,16 +45,16 @@ try:
             element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
             return element.text
         except Exception as e:
-            print(f"Error getting text from element {xpath}: {e}")
-            return None
+            # print(f"Error getting text from element {xpath}: {e}")
+            return "None"
 
     # Close the dialogue box (Cookies Policy)
     # Click on the "Accept/Aceptar" button
-    time.sleep(5)
+    #time.sleep(5)
     click_element_by_xpath('//*[@id="didomi-notice-agree-button"]')
 
     #  Ensuring the page is in Spanish
-    time.sleep(5)
+    #time.sleep(5)
     if get_element_text_by_xpath('//*[@id="edition_head"]/a/span') == "ESPAÑA":
         print("The page is in Spanish")
     else:
@@ -71,7 +70,7 @@ try:
         # print("Successfully selected 'ESPAÑA'.")
 
     #Scrape top 5 articles fromt the Opinion section
-    time.sleep(5)
+    #time.sleep(5)
     click_element_by_xpath('//*[@id="csw"]/div[1]/nav/div/a[3]')
 
     # Initialize variables
@@ -112,19 +111,19 @@ try:
         driver.execute_script("window.open(arguments[0], '_blank');", link)
         driver.switch_to.window(driver.window_handles[-1])
         driver.set_page_load_timeout(10)
-        time.sleep(5)
+        #time.sleep(5)
         
         try:
             # Extract article title
             title = get_element_text_by_xpath("/html/body/article/header/div[1]/h1")
-            if title is None:
+            if title is "None":
                 driver.close()
                 driver.switch_to.window(driver.window_handles[0])
                 continue
             
             # Extract article content
             content = get_element_text_by_xpath("/html/body/article/header/div[1]/h2")
-            if content is None:
+            if content is "None":
                 driver.close()
                 driver.switch_to.window(driver.window_handles[0])
                 continue
@@ -148,7 +147,7 @@ try:
                 driver.get(images[0])
                 driver.save_screenshot(os.getcwd() + f"/article_images/{title}.png")
                 
-                print(f"Article {idx}\n Title: {title}\n Content: {content}\n Image link: {images[0]}\n")
+                print(f"Article {itr}\n Title: {title}\n Content: {content}\n Image link: {images[0]}\n")
         
         except Exception as e:
             print(f"Error accessing {link}: {e}")
@@ -163,7 +162,6 @@ try:
 
     driver.quit()
 
-    # Translate the titles of the articles to English using the Google Translate API
     # Translate the titles of the articles to English using the Google Translate API
     def translate_text(text, from_lang="es", to_lang="en"):
         try:
@@ -229,7 +227,6 @@ try:
     # Set the status of the test as 'passed'
     driver.execute_script(
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "All steps executed successfully!"}}')
-
 except NoSuchElementException as err:
     message = 'Exception: ' + str(err.__class__) + str(err.msg)
     driver.execute_script(
@@ -240,4 +237,7 @@ except Exception as err:
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": ' + json.dumps(message) + '}}')
 finally:
     # Stop the driver
+    driver.quit()
+
+if driver:
     driver.quit()

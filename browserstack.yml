@@ -1,5 +1,8 @@
-userName: sonusahu_O9aEmj
-accessKey: UWqwKtmmWB27s7qiT7vL
+# userName: sonusahu_O9aEmj
+# accessKey: UWqwKtmmWB27s7qiT7vL
+
+userName: sonusahu_ozpyfC
+accessKey: MhonQq2dQcLpWcpcEHRx
 
 projectName: BrowserStack Samples 
 
@@ -27,12 +30,10 @@ platforms:
     osVersion: 17
     browserName: safari
     deviceOrientation: portrait
-  - os: OS X
-    osVersion: Sequoia
-    browserName: Edge
-    browserVersion: latest
 
-browserstackLocal: true # <boolean> (Default false)
+browserstackLocal: false # <boolean> (Default false)
 debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
 networkLogs: false # <boolean> Set to true to enable HAR logs capturing
 consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)
+idleTimeout: 300
+selfHeal: true
