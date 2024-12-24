@@ -22,31 +22,29 @@ options = ChromeOptions()
 options.set_capability('sessionName', 'BStack Sample Test')
 driver = webdriver.Chrome(options=options)
 
-driver = webdriver.Chrome(options=options)
-
 # driver = webdriver.Chrome()
+def click_element_by_xpath(xpath):
+    try:
+        element = driver.find_element(by=By.XPATH, value=xpath)
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
+        element.click()
+    except Exception as e:
+        # print(f"Error clicking element {xpath}: {e}")
+        pass
 
+def get_element_text_by_xpath(xpath):
+    try:
+        element = driver.find_element(by=By.XPATH, value=xpath)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+        return element.text
+    except Exception as e:
+        # print(f"Error getting text from element {xpath}: {e}")
+        return "None"
+    
 try:
     driver.get("https://elpais.com/")
+    print("Successfully opened the website.")
     wait = WebDriverWait(driver, 10)
-
-    def click_element_by_xpath(xpath):
-        try:
-            element = driver.find_element(by=By.XPATH, value=xpath)
-            element = wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
-            element.click()
-        except Exception as e:
-            # print(f"Error clicking element {xpath}: {e}")
-            pass
-
-    def get_element_text_by_xpath(xpath):
-        try:
-            element = driver.find_element(by=By.XPATH, value=xpath)
-            element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
-            return element.text
-        except Exception as e:
-            # print(f"Error getting text from element {xpath}: {e}")
-            return "None"
 
     # Close the dialogue box (Cookies Policy)
     # Click on the "Accept/Aceptar" button
@@ -237,7 +235,4 @@ except Exception as err:
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": ' + json.dumps(message) + '}}')
 finally:
     # Stop the driver
-    driver.quit()
-
-if driver:
     driver.quit()

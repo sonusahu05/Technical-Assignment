@@ -22,14 +22,14 @@ platforms:
   - deviceName: Samsung Galaxy S22 Ultra
     browserName: chrome 
     osVersion: 12.0
-  - deviceName: Google Pixel 9
-    osVersion: 15.0
-    browserName: chrome
-    deviceOrientation: portrait
-  - deviceName: iPhone 15 Plus
-    osVersion: 17
-    browserName: safari
-    deviceOrientation: portrait
+  # - deviceName: Google Pixel 9
+  #   osVersion: 15.0
+  #   browserName: chrome
+  #   deviceOrientation: portrait
+  # - deviceName: iPhone 15 Plus
+  #   osVersion: 17
+  #   browserName: safari
+    # deviceOrientation: portrait
 
 browserstackLocal: false # <boolean> (Default false)
 debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
