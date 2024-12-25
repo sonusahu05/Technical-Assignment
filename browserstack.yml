@@ -8,25 +8,25 @@ buildName: browserstack build
 buildIdentifier: ${BUILD_NUMBER}
 
 platforms:
-  # - os: OS X
-  #   osVersion: Big Sur
-  #   browserName: Chrome
-  #   browserVersion: latest
-  # - os: Windows
-  #   osVersion: 10
-  #   browserName: Edge
-  #   browserVersion: latest
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
   - deviceName: Samsung Galaxy S22 Ultra
     browserName: chrome 
     osVersion: 12.0
-  # - deviceName: Google Pixel 9
-  #   osVersion: 15.0
-  #   browserName: chrome
-  #   deviceOrientation: portrait
-  # - os: Windows
-  #   osVersion: 11
-  #   browserName: firefox
-  #   deviceOrientation: latest
+  - deviceName: Google Pixel 9
+    osVersion: 15.0
+    browserName: chrome
+    deviceOrientation: portrait
+  - os: Windows
+    osVersion: 11
+    browserName: firefox
+    deviceOrientation: latest
 
 browserstackLocal: false # <boolean> (Default false)
 debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
