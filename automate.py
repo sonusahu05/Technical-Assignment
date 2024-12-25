@@ -45,7 +45,6 @@ def get_element_text_by_xpath(xpath):
 
 # main logic starts here
 try:
-
     # Open the website
     driver.get("https://elpais.com/")
     print("Successfully opened the website.")
@@ -66,7 +65,38 @@ try:
     if get_element_text_by_xpath('//*[@id="edition_head"]/a/span') == "ESPAÑA":
         print("The page is in Spanish")
     else:
-        print("The page is not in Spanish")
+        # Take any random text from the website
+        random_text = get_element_text_by_xpath('//*[@id="csw"]/div[1]/nav/div/a[3]')
+
+        # Function to detect language using Google Translate API
+        def detect_language(text):
+            try:
+                url = "https://google-translate113.p.rapidapi.com/api/v1/translator/detect"
+                payload = {"text": text}
+                headers = {
+                    "x-rapidapi-key": "989ba4021amsh77404cec44a4edap1b7005jsnc38adc501a21",
+                    "x-rapidapi-host": "google-translate113.p.rapidapi.com",
+                    "Content-Type": "application/json"
+                }
+                
+                response = requests.post(url, json=payload, headers=headers)
+                if response.status_code == 200:
+                    return response.json().get("lang", "unknown")
+                else:
+                    # print(f"Language detection failed for '{text}': {response.text}")
+                    pass
+                    return "unknown"
+            except Exception as e:
+                # print(f"Error detecting language for '{text}': {e}")
+                pass
+                return "unknown"
+
+        # Check if the random text is in Spanish
+        detected_language = detect_language(random_text)
+        if detected_language == "es":
+            print("The website is in Spanish.")
+        else:
+            print("The website is not in Spanish.")
 
     #Scrape top 5 articles fromt the Opinion section
 
@@ -147,7 +177,8 @@ try:
                 print(f"Article {itr}\n Title: {title}\n Content: {content}\n Image link: {images[0]}\n")
         
         except Exception as e:
-            print(f"Error accessing {link}: {e}")
+            # print(f"Error accessing {link}: {e}")
+            pass
 
         # Close the tab
         driver.close()
@@ -156,8 +187,6 @@ try:
         if itr == max_articles:
             break
         itr+=1
-
-    driver.quit()
 
     # Translate the titles of the articles to English using the Google Translate API
     def translate_text(text, from_lang="es", to_lang="en"):
@@ -181,7 +210,8 @@ try:
                 print(f"Translation failed for '{text}': {response.text}")
                 return text
         except Exception as e:
-            print(f"Error translating '{text}': {e}")
+            # print(f"Error translating '{text}': {e}")
+            pass
             return text
 
     # Translate the titles of the articles to English
@@ -193,7 +223,6 @@ try:
 
         print(f"Article {itr}\n Title: {title}\n Translated Title: {translated_title}\n")
         itr+=1
-
 
     # Count the number of occurance of the repeated words in the translated titles of the articles
     # Print the count of each word along wiht the word
@@ -224,20 +253,28 @@ try:
         print("No words repeated more than twice found in the translated titles.")
     
     # Set the status of the test as 'passed'
-    driver.execute_script(
-        'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "All steps executed successfully!"}}')
-    driver.quit()
+    executor_object = {
+    "action": "setSessionStatus",
+    "arguments": {
+        "status": "passed",
+        "reason": "All tests passed successfully!"
+        }
+    }
+    browserstack_executor = f'browserstack_executor: {json.dumps(executor_object)}'
+    driver.execute_script(browserstack_executor)
+
 except NoSuchElementException as err:
     message = 'Exception: ' + str(err.__class__) + str(err.msg)
     driver.execute_script(
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": ' + json.dumps(message) + '}}')
+
 except Exception as err:
     message = 'Exception: ' + str(err.__class__) + str(err.msg)
     driver.execute_script(
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": ' + json.dumps(message) + '}}')
+
 finally:
     # Stop the driver
-    if driver:
-        driver.quit()
+    driver.quit()
 
 print("Execution completed.")
