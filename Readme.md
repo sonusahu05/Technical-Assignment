@@ -36,9 +36,8 @@ Prerequisites
 	1.	Python: Ensure Python 3.x is installed on your system.
 	2.	BrowserStack Credentials:
 	•	Access your BrowserStack account and note the username and access key.
-	•	Add these details to the browserstack_credentials.json file or set them as environment variables.
 	3.	Selenium WebDriver:
-	•	Install the appropriate WebDriver for your browser (e.g., ChromeDriver for Google Chrome).
+	•	Tested using the Chrome driver locally.
 	4.	Google Translate API Key:
 	•	Sign up for the Google Translate API or an equivalent service.
 	•	Store the API key in a configuration file or as an environment variable.
@@ -54,7 +53,8 @@ Project Workflow
 	•	Initialize the WebDriverWait object to handle dynamic content on the website.
 
 2. Web Scraping:
-	•	Navigate to the Opinion section of the El País website.
+	•	Make sure the page is in Spanish
+    •	Navigate to the Opinion section of the El País website.
 	•	Scrape the title, content, and cover image for the first five articles.
 	•	Save the cover images to a local folder (article_images).
 
@@ -75,15 +75,11 @@ How to Run the Project
 	1.	Local Execution:
 	•	Run the script locally to validate functionality:
 
-python script.py
-
+browserstack-sdk python automate.py
 
 	2.	Cross-Browser Testing on BrowserStack:
 	•	Modify the capabilities in the script to include desired browser and device configurations.
 	•	Run the script using BrowserStack:
-
-python browserstack_script.py
-
 
 	3.	Saving Results:
 	•	The scraped article details will be saved in a structured format.
@@ -91,13 +87,13 @@ python browserstack_script.py
 
 Output
 	•	Web Scraping:
-	•	Titles, content, and images (if available) of the first five articles in Spanish.
+	    •	Titles, content, and images (if available) of the first five articles in Spanish.
 	•	API Integration:
-	•	Translated headers of the articles in English.
+	    •	Translated headers of the articles in English.
 	•	Text Processing:
-	•	Repeated words in the translated headers along with their counts.
+        •   Repeated words in the translated headers along with their counts.
 	•	Cross-Browser Testing:
-	•	Results of the test execution across different browser and device combinations, viewable in the BrowserStack dashboard.
+        •	Results of the test execution across different browser and device combinations, viewable in the BrowserStack dashboard.
 
 Example Results
 
@@ -116,19 +112,10 @@ Repeated Words:
 Folder Structure
 
 ├── article_images/            # Folder for saving article cover images
-├── browserstack_script.py     # Main script for running tests on BrowserStack
+├── automate.py                # Main script for running tests on BrowserStack
 ├── requirements.txt           # List of Python dependencies
 ├── README.md                  # Documentation
-├── browserstack_credentials.json  # BrowserStack credentials file (optional)
-├── config.py                  # Configuration file for API keys and settings
-
-Future Enhancements
-	•	Add support for handling dynamic consent modals and GDPR compliance dialogs.
-	•	Extend the solution to scrape additional sections of the website.
-	•	Improve test coverage with more browser and device combinations.
-
-License
-
-This project is licensed under the MIT License.
+├── browserstack.yml           # browserstack-sdk congigurations
+├── automate.exe               # executable file
 
 Feel free to reach out for questions or feedback! Happy testing! 😊
