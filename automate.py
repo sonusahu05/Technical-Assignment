@@ -14,6 +14,7 @@ import os
 import requests
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 import json
+from langdetect import detect
 
 # Driver configuration
 options = ChromeOptions()
@@ -65,39 +66,11 @@ try:
     if get_element_text_by_xpath('//*[@id="edition_head"]/a/span') == "ESPAÑA":
         print("The page is in Spanish")
     else:
-        # Take any random text from the website
-        random_text = get_element_text_by_xpath('//*[@id="csw"]/div[1]/nav/div/a[3]')
-
-        # Function to detect language using Google Translate API
-        def detect_language(text):
-            try:
-                url = "https://google-translate113.p.rapidapi.com/api/v1/translator/detect"
-                payload = {"text": text}
-                headers = {
-                    "x-rapidapi-key": "989ba4021amsh77404cec44a4edap1b7005jsnc38adc501a21",
-                    "x-rapidapi-host": "google-translate113.p.rapidapi.com",
-                    "Content-Type": "application/json"
-                }
-                
-                response = requests.post(url, json=payload, headers=headers)
-                if response.status_code == 200:
-                    return response.json().get("lang", "unknown")
-                else:
-                    # print(f"Language detection failed for '{text}': {response.text}")
-                    pass
-                    return "unknown"
-            except Exception as e:
-                # print(f"Error detecting language for '{text}': {e}")
-                pass
-                return "unknown"
-
-        # Check if the random text is in Spanish
-        detected_language = detect_language(random_text)
-        if detected_language == "es":
-            print("The website is in Spanish.")
+        if "es" in driver.find_element(By.TAG_NAME, "html").get_attribute("lang"):
+            print("The page is in Spanish")
         else:
-            print("The website is not in Spanish.")
-
+            print("The page is not in Spanish")
+       
     #Scrape top 5 articles fromt the Opinion section
 
     # Click on the "Opinion" section
