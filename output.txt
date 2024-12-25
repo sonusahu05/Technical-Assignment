@@ -1,0 +1,260 @@
+Successfully opened the website.
+Successfully opened the website.
+The page is in Spanish
+Successfully opened the website.
+Successfully opened the website.
+Successfully opened the website.
+The page is in Spanish
+The page is in Spanish
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Content: Felipe VI sitúa la dana en un lugar protagonista para “no olvidar nunca el dolor y la tristeza” de las víctimas, entiende las críticas por la descoordinación entre Administraciones y pide abordar los grandes retos en inmigración y vivienda
+ Image link: https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-authors%2Fprisa%2Fd2baa040-0138-45c9-bfc3-896013d41816.png?auth=83e9dde941051cfb233a896f4656fac54a97728359a4d80c80c45403a7d26341&width=100&height=100&smart=true
+
+The page is in Spanish
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Content: Felipe VI y Letizia buscaron la cercanía con las víctimas de la dana, con el riesgo de que su papel no se vea como complementario sino contrapuesto al de las Administraciones
+ Image link: https://imagenes.elpais.com/resizer/v2/VZJYD3AI7ZAGRGOTVMIPYFAPHA.jpg?auth=e96bcd037a5f30d82d2079fc37e4a211ad58c3de1446c80edf062456efcf958f&width=1200&height=675&smart=true
+
+Article 1
+ Title: El PSOE y el PP celebran la defensa del consenso y la “serenidad” hecha por Felipe VI y evitan darse por aludidos
+ Content: Sumar califica el discurso de “decepcionante y derechizado”, y Junts se limita a tildar de “ilusos enterradores” a quienes dan por terminado el ‘procés’
+ Image link: https://imagenes.elpais.com/resizer/v2/FC63UVR2CRFSTGTLSG3XPNS3ZE.jpg?auth=4bab54530096647b1047217e5ebd1491ff08fde7896f5a58db250ec52fbbe179&width=414
+
+Article 1
+ Title: El PSOE y el PP celebran la defensa del consenso y la “serenidad” hecha por Felipe VI y evitan darse por aludidos
+ Content: Sumar califica el discurso de “decepcionante y derechizado”, y Junts se limita a tildar de “ilusos enterradores” a quienes dan por terminado el ‘procés’
+ Image link: https://imagenes.elpais.com/resizer/v2/FC63UVR2CRFSTGTLSG3XPNS3ZE.jpg?auth=4bab54530096647b1047217e5ebd1491ff08fde7896f5a58db250ec52fbbe179&width=414
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Content: En su 13ª embestida contra las infraestructuras críticas, Moscú ha causado también al menos seis heridos civiles en Járkov, según las autoridades
+ Image link: https://imagenes.elpais.com/resizer/v2/TSTPE4YPPHCNBVUPENMWEIPM2A.jpg?auth=8c85a87835b8faddd35cf619240602385783949e1cb93835e679cd59533d6983&width=414
+
+The page is in Spanish
+Article 2
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Content: Felipe VI sitúa la dana en un lugar protagonista para “no olvidar nunca el dolor y la tristeza” de las víctimas, entiende las críticas por la descoordinación entre Administraciones y pide abordar los grandes retos en inmigración y vivienda
+ Image link: https://imagenes.elpais.com/resizer/v2/W722NAI7EZAN5DB4XA4BW6RDHU.jpg?auth=50ec054ebfdebf4719da1d7f3bee5bcb417d4f168c704e3c9a136c44e326a14f&width=1200&height=675&smart=true
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Content: Según las autoridades kazajas, hay supervivientes del siniestro del avión, que cubría la ruta entre Bakú (Azerbaiyán) y Grozni (Rusia)
+ Image link: https://imagenes.elpais.com/resizer/v2/XASDG5WQ4RABNKQFNFB6UW5ZFI.JPG?auth=d6099c4f53a1b7ced0d531ec5e0e3d1144487cdd0f6de6e753ef7317dde770e3&width=414
+
+Article 5
+ Title: El gobierno de los millonarios
+ Content: Por vez primera, los dueños de inmensos monopolios, digitales o no, han llegado directamente al poder político para defender sus intereses
+ Image link: https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Translated Title: The King asks for consensus and serenity in the face of the noise of public debate
+
+Article 3
+ Title: El año que los Reyes bajaron al barro
+ Content: Felipe VI y Letizia buscaron la cercanía con las víctimas de la dana, con el riesgo de que su papel no se vea como complementario sino contrapuesto al de las Administraciones
+ Image link: https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-authors%2Fprisa%2Fddbddc3c-c44a-42bd-92a6-bfe243bd41e4.jpg?auth=884052354661878081b5abb0f7daf07371836e0609c3f6a734727284d2699e83&width=100&height=100&smart=true
+
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Translated Title: The year the Kings descended into the mud
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Translated Title: Russia launches large-scale attack on Ukraine's energy system on Christmas
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Translated Title: Passenger plane with 67 people on board crashes in Kazakhstan
+
+Article 5
+ Title: El gobierno de los millonarios
+ Translated Title: The government of the millionaires
+
+Words repeated more than twice across all headers:
+the: 8
+of: 3
+on: 3
+Execution completed.
+Article 4
+ Title: Yo no acuso
+ Content: La política española no solo transcurre en los juzgados, sino que copia el formato judicial
+ Image link: https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414
+
+Article 5
+ Title: El barro y mamá: un cuento de Navidad tras la dana
+ Content: La memoria crece en los detalles. Aquel fuerte de juguete. El agua creciendo. Las calles anegadas. Los coches amontonados. El cuerpo de la modista de Catarroja flotando en su habitación
+ Image link: https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+Article 1
+ Title: El PSOE y el PP celebran la defensa del consenso y la “serenidad” hecha por Felipe VI y evitan darse por aludidos
+ Translated Title: The PSOE and the PP celebrate the defense of consensus and “serenity” made by Felipe VI and avoid taking the hint
+
+Article 2
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Translated Title: The King asks for consensus and serenity in the face of the noise of public debate
+
+Article 3
+ Title: El año que los Reyes bajaron al barro
+ Translated Title: The year the Kings descended into the mud
+
+Article 4
+ Title: Yo no acuso
+ Translated Title: I do not accuse
+
+Article 5
+ Title: El barro y mamá: un cuento de Navidad tras la dana
+ Translated Title: Mud and mom: a Christmas story after the dana
+
+Words repeated more than twice across all headers:
+the: 11
+and: 5
+of: 3
+Article 2
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Content: Felipe VI sitúa la dana en un lugar protagonista para “no olvidar nunca el dolor y la tristeza” de las víctimas, entiende las críticas por la descoordinación entre Administraciones y pide abordar los grandes retos en inmigración y vivienda
+ Image link: https://imagenes.elpais.com/resizer/v2/W722NAI7EZAN5DB4XA4BW6RDHU.jpg?auth=50ec054ebfdebf4719da1d7f3bee5bcb417d4f168c704e3c9a136c44e326a14f&width=1200&height=675&smart=true
+
+Execution completed.
+Article 3
+ Title: El año que los Reyes bajaron al barro
+ Content: Felipe VI y Letizia buscaron la cercanía con las víctimas de la dana, con el riesgo de que su papel no se vea como complementario sino contrapuesto al de las Administraciones
+ Image link: https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-authors%2Fprisa%2Fddbddc3c-c44a-42bd-92a6-bfe243bd41e4.jpg?auth=884052354661878081b5abb0f7daf07371836e0609c3f6a734727284d2699e83&width=100&height=100&smart=true
+
+Article 4
+ Title: Yo no acuso
+ Content: La política española no solo transcurre en los juzgados, sino que copia el formato judicial
+ Image link: https://imagenes.elpais.com/resizer/v2/MFLDESMSEFDAZLW7FXE7E22AJ4.JPG?auth=f42c2913c455ba9a723e1d847f769382dfb08073e804aa0196b19765121b7cb0&width=414
+
+Article 5
+ Title: El barro y mamá: un cuento de Navidad tras la dana
+ Content: La memoria crece en los detalles. Aquel fuerte de juguete. El agua creciendo. Las calles anegadas. Los coches amontonados. El cuerpo de la modista de Catarroja flotando en su habitación
+ Image link: https://imagenes.elpais.com/resizer/v2/7PKQQGMAVRHAHKRIJH32ETR5LE.jpg?auth=55935e9bee3201f4b39f0e9f1df4ab123da538651105a26a69b2ff93960a333c&width=414
+
+Article 1
+ Title: El PSOE y el PP celebran la defensa del consenso y la “serenidad” hecha por Felipe VI y evitan darse por aludidos
+ Translated Title: The PSOE and the PP celebrate the defense of consensus and “serenity” made by Felipe VI and avoid taking the hint
+
+Article 2
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Translated Title: The King asks for consensus and serenity in the face of the noise of public debate
+
+Article 3
+ Title: El año que los Reyes bajaron al barro
+ Translated Title: The year the Kings descended into the mud
+
+Article 4
+ Title: Yo no acuso
+ Translated Title: I do not accuse
+
+Article 5
+ Title: El barro y mamá: un cuento de Navidad tras la dana
+ Translated Title: Mud and mom: a Christmas story after the dana
+
+Words repeated more than twice across all headers:
+the: 11
+and: 5
+of: 3
+Execution completed.
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Content: Felipe VI sitúa la dana en un lugar protagonista para “no olvidar nunca el dolor y la tristeza” de las víctimas, entiende las críticas por la descoordinación entre Administraciones y pide abordar los grandes retos en inmigración y vivienda
+ Image link: https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-authors%2Fprisa%2Fd2baa040-0138-45c9-bfc3-896013d41816.png?auth=83e9dde941051cfb233a896f4656fac54a97728359a4d80c80c45403a7d26341&width=100&height=100&smart=true
+
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Content: Felipe VI y Letizia buscaron la cercanía con las víctimas de la dana, con el riesgo de que su papel no se vea como complementario sino contrapuesto al de las Administraciones
+ Image link: https://imagenes.elpais.com/resizer/v2/VZJYD3AI7ZAGRGOTVMIPYFAPHA.jpg?auth=e96bcd037a5f30d82d2079fc37e4a211ad58c3de1446c80edf062456efcf958f&width=1200&height=675&smart=true
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Content: En su 13ª embestida contra las infraestructuras críticas, Moscú ha causado también al menos seis heridos civiles en Járkov, según las autoridades
+ Image link: https://imagenes.elpais.com/resizer/v2/TSTPE4YPPHCNBVUPENMWEIPM2A.jpg?auth=8c85a87835b8faddd35cf619240602385783949e1cb93835e679cd59533d6983&width=414
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Content: Según las autoridades kazajas, hay supervivientes del siniestro del avión, que cubría la ruta entre Bakú (Azerbaiyán) y Grozni (Rusia)
+ Image link: https://imagenes.elpais.com/resizer/v2/XASDG5WQ4RABNKQFNFB6UW5ZFI.JPG?auth=d6099c4f53a1b7ced0d531ec5e0e3d1144487cdd0f6de6e753ef7317dde770e3&width=414
+
+Article 5
+ Title: El gobierno de los millonarios
+ Content: Por vez primera, los dueños de inmensos monopolios, digitales o no, han llegado directamente al poder político para defender sus intereses
+ Image link: https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Translated Title: The King asks for consensus and serenity in the face of the noise of public debate
+
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Translated Title: The year the Kings descended into the mud
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Translated Title: Russia launches large-scale attack on Ukraine's energy system on Christmas
+
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Content: Felipe VI sitúa la dana en un lugar protagonista para “no olvidar nunca el dolor y la tristeza” de las víctimas, entiende las críticas por la descoordinación entre Administraciones y pide abordar los grandes retos en inmigración y vivienda
+ Image link: https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-authors%2Fprisa%2Fd2baa040-0138-45c9-bfc3-896013d41816.png?auth=83e9dde941051cfb233a896f4656fac54a97728359a4d80c80c45403a7d26341&width=100&height=100&smart=true
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Translated Title: Passenger plane with 67 people on board crashes in Kazakhstan
+
+Article 5
+ Title: El gobierno de los millonarios
+ Translated Title: The government of the millionaires
+
+Words repeated more than twice across all headers:
+the: 8
+of: 3
+on: 3
+Execution completed.
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Content: Felipe VI y Letizia buscaron la cercanía con las víctimas de la dana, con el riesgo de que su papel no se vea como complementario sino contrapuesto al de las Administraciones
+ Image link: https://imagenes.elpais.com/resizer/v2/VZJYD3AI7ZAGRGOTVMIPYFAPHA.jpg?auth=e96bcd037a5f30d82d2079fc37e4a211ad58c3de1446c80edf062456efcf958f&width=1200&height=675&smart=true
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Content: En su 13ª embestida contra las infraestructuras críticas, Moscú ha causado también al menos seis heridos civiles en Járkov, según las autoridades
+ Image link: https://imagenes.elpais.com/resizer/v2/TSTPE4YPPHCNBVUPENMWEIPM2A.jpg?auth=8c85a87835b8faddd35cf619240602385783949e1cb93835e679cd59533d6983&width=414
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Content: Según las autoridades kazajas, hay supervivientes del siniestro del avión, que cubría la ruta entre Bakú (Azerbaiyán) y Grozni (Rusia)
+ Image link: https://imagenes.elpais.com/resizer/v2/XASDG5WQ4RABNKQFNFB6UW5ZFI.JPG?auth=d6099c4f53a1b7ced0d531ec5e0e3d1144487cdd0f6de6e753ef7317dde770e3&width=414
+
+Article 5
+ Title: El gobierno de los millonarios
+ Content: Por vez primera, los dueños de inmensos monopolios, digitales o no, han llegado directamente al poder político para defender sus intereses
+ Image link: https://imagenes.elpais.com/resizer/v2/Q6XAOHWGGVFCHLHSJOVDLAA7SE.jpg?auth=f797c1d7b9c03879f5d11801a8041ab216bea9abefd0a45916e302224ff464d0&width=414
+
+Article 1
+ Title: El Rey pide consenso y serenidad frente al ruido del debate público
+ Translated Title: The King asks for consensus and serenity in the face of the noise of public debate
+
+Article 2
+ Title: El año que los Reyes bajaron al barro
+ Translated Title: The year the Kings descended into the mud
+
+Article 3
+ Title: Rusia lanza un ataque a gran escala contra el sistema energético ucranio en Navidad
+ Translated Title: Russia launches large-scale attack on Ukraine's energy system on Christmas
+
+Article 4
+ Title: Un avión de pasajeros con 67 personas a bordo se estrella en Kazajistán
+ Translated Title: Passenger plane with 67 people on board crashes in Kazakhstan
+
+Article 5
+ Title: El gobierno de los millonarios
+ Translated Title: The government of the millionaires
+
+Words repeated more than twice across all headers:
+the: 8
+of: 3
+on: 3
+Execution completed.

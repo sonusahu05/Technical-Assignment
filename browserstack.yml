@@ -25,7 +25,7 @@ platforms:
     deviceOrientation: portrait
   - os: Windows
     osVersion: 11
-    browserName: firefox
+    browserName: Chrome
     deviceOrientation: latest
 
 browserstackLocal: false # <boolean> (Default false)
