@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
@@ -15,15 +17,10 @@ import requests
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 import json
 
-# Driver configuration
-options = ChromeOptions()
-options.set_capability('sessionName', 'Assignment - BrowserStack')
-driver = webdriver.Chrome(options=options)
+
+driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 10)
 
-# driver = webdriver.Chrome()
-
-# function to click on an element using its xpath
 def click_element_by_xpath(xpath):
     try:
         element = driver.find_element(by=By.XPATH, value=xpath)
@@ -33,7 +30,6 @@ def click_element_by_xpath(xpath):
         # print(f"Error clicking element {xpath}: {e}")
         pass
 
-# function to get the text of an element using its xpath
 def get_element_text_by_xpath(xpath):
     try:
         element = driver.find_element(by=By.XPATH, value=xpath)
@@ -42,16 +38,14 @@ def get_element_text_by_xpath(xpath):
     except Exception as e:
         # print(f"Error getting text from element {xpath}: {e}")
         return "None"
-
-# main logic starts here
+    
 try:
-
-    # Open the website
     driver.get("https://elpais.com/")
     print("Successfully opened the website.")
 
     # Close the dialogue box (Cookies Policy)
-    # Click on the "Accept/Aceptar"/ "ACCEPT TO CONTINUE" button
+    # Click on the "Accept/Aceptar" button
+    # time.sleep(5)
     try:
         element = driver.find_element(by=By.XPATH, value='//*[@id="didomi-notice-agree-button"]')
         element = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="didomi-notice-agree-button"]')))
@@ -63,19 +57,20 @@ try:
     click_element_by_xpath('//*[@id="pmConsentWall"]/div/div/div[2]/div[1]/a')
 
     #  Ensuring the page is in Spanish
+    #time.sleep(5)
     if get_element_text_by_xpath('//*[@id="edition_head"]/a/span') == "ESPAÑA":
         print("The page is in Spanish")
     else:
         print("The page is not in Spanish")
 
-    #Scrape top 5 articles fromt the Opinion section
-
-    # Click on the "Opinion" section
+    # Scrape top 5 articles fromt the Opinion section
+    # time.sleep(5)
     click_element_by_xpath('//*[@id="csw"]/div[1]/nav/div/a[3]')
 
+    # Initialize variables
     article_links = []
     max_articles = 5  # Number of articles to fetch
-    # Locate all <article> elements on the page
+        # Locate all <article> elements on the page
     articles = driver.find_elements(By.TAG_NAME, "article")
 
     # Loop through each article and extract desired information
@@ -99,7 +94,7 @@ try:
     # Initialize variables
     articles = defaultdict(dict)
 
-    # Create the directory for saving images
+    # Create the directory for saving images if it doesn't exist
     if not os.path.exists("article_images"):
         os.makedirs("article_images")
 
@@ -109,6 +104,8 @@ try:
         # Open the link in a new tab
         driver.execute_script("window.open(arguments[0], '_blank');", link)
         driver.switch_to.window(driver.window_handles[-1])
+        driver.set_page_load_timeout(10)
+        #time.sleep(5)
         
         try:
             # Extract article title
@@ -222,11 +219,10 @@ try:
 
     if not has_words_repeated:
         print("No words repeated more than twice found in the translated titles.")
-    
+
     # Set the status of the test as 'passed'
     driver.execute_script(
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "All steps executed successfully!"}}')
-    driver.quit()
 except NoSuchElementException as err:
     message = 'Exception: ' + str(err.__class__) + str(err.msg)
     driver.execute_script(
@@ -237,7 +233,4 @@ except Exception as err:
         'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": ' + json.dumps(message) + '}}')
 finally:
     # Stop the driver
-    if driver:
-        driver.quit()
-
-print("Execution completed.")
+    driver.quit()

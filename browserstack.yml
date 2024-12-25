@@ -1,8 +1,8 @@
 # userName: sonusahu_O9aEmj
 # accessKey: UWqwKtmmWB27s7qiT7vL
 
-userName: sonusahu_ozpyfC
-accessKey: MhonQq2dQcLpWcpcEHRx
+userName: sonusahu_0eTxYq
+accessKey: nUurFir8iiKmCyeXxxyJ
 
 projectName: BrowserStack Samples 
 
@@ -22,14 +22,14 @@ platforms:
   - deviceName: Samsung Galaxy S22 Ultra
     browserName: chrome 
     osVersion: 12.0
-  # - deviceName: Google Pixel 9
-  #   osVersion: 15.0
-  #   browserName: chrome
-  #   deviceOrientation: portrait
-  # - deviceName: iPhone 15 Plus
-  #   osVersion: 17
-  #   browserName: safari
-    # deviceOrientation: portrait
+  - deviceName: Google Pixel 9
+    osVersion: 15.0
+    browserName: chrome
+    deviceOrientation: portrait
+  - os: Windows
+    osVersion: 11
+    browserName: firefox
+    deviceOrientation: latest
 
 browserstackLocal: false # <boolean> (Default false)
 debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
@@ -37,3 +37,5 @@ networkLogs: false # <boolean> Set to true to enable HAR logs capturing
 consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)
 idleTimeout: 300
 selfHeal: true
+interactiveDebugging: true
+video: true

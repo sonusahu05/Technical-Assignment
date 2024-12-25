@@ -21,9 +21,3 @@ Cross-Browser Testing:
     Run the solution locally to verify functionality.
     Once validated, execute the solution on BrowserStack across 5 parallel threads, testing across a combination of desktop and mobile browsers.
     Submission: Kindly upload your completed assignment source code to GitHub within the next 3 days.
-
-
-Notes:
-1 avoid time.sleep
-2 specific xpaths
-(By.XPATH,'//section[@data-dtm-region="portada_apertura"]')
